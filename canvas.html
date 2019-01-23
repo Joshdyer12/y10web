@@ -1,0 +1,40 @@
+<html>
+<body>
+
+    
+    
+<canvas id="myCanvas" width="600" height="500"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+
+    </canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ ctx.fillStyle = "#ffcccc"
+    ctx.fillRect(0,0,600,500);
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(30,75,250,75);
+ctx.fillStyle = "#3377ff"
+    ctx.fillRect(0,0,250,75);
+ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+    ctx.fillStyle = "#ffff4d"
+            ctx.fill();
+   
+    
+</script>
+
+    <img id="sickomode" width="220" height="277"
+src="sickomode.jpg" alt="sicko">
+    
+    <script>window.onload = function() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("sicko");
+   ctx.drawImage(img, 10, 10);
+};</script>
+</body>
+</html>
